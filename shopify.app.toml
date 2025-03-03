@@ -1,0 +1,24 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "687c8646649d2c9f32a51dfe70d675d9"
+application_url = "https://shopify.dev/apps/default-app-home"
+embedded = true
+name = "jay-product-discounts-app"
+handle = "jay-product-discounts-app"
+
+[webhooks]
+api_version = "2025-01"
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products, write_discounts, write_discounts_allocator_functions, read_products"
+
+[auth]
+redirect_urls = [ "https://shopify.dev/apps/default-app-home/api/auth" ]
+
+[pos]
+embedded = false
+
+[build]
+dev_store_url = "arshiyas-development-store.myshopify.com"
+include_config_on_deploy = true
